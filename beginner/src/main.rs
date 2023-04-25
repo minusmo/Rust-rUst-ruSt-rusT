@@ -5,6 +5,9 @@ fn main() {
     let slice: [i32; 500] = [1; 500];
 
     for i in 0..array.len() {
-        println!("{}",array[i]);
+        match i {
+            1..=2 => println!("{}", i),
+            _ => println!("{}", "odd!"),
+        }
     }
 }
